@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer Pomodoro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        
+        <div class="title-container">
+            <h1>Pomodoro</h1>
+
+        </div>
+
+        <div class="app-container">
+
+            <div class="tiles">
+                
+                <div class="work">
+                    
+    
+                    <div class="arrows">
+    
+                        <button class="up-arrow" id="work-up" onclick="tileValue('work-up')">
+                            <img src="img/circle-arrow-up-solid.svg" alt="Up arrow">
+                        </button>
+    
+                        <button class="down-arrow" id="work-down" onclick="tileValue('work-down')">
+                            <img src="img/circle-arrow-down-solid.svg" alt="Down arrow">
+                        </button>
+                         
+                    </div>
+    
+                    <div class="tile">
+                        <p class="num" id="work-minutes">25</p>                
+                        <p class="text">Trabalho</p>
+                    </div>
+                    
+                </div>
+                
+    
+                <div class="pause">
+    
+                    <div class="arrows">
+                        <button class="up-arrow" id="pause-up" onclick="tileValue('pause-up')">
+                            <img src="img/circle-arrow-up-solid.svg" alt="Up arrow">
+                        </button>
+    
+                        <button class="down-arrow" id="pause-down" onclick="tileValue('pause-down')">
+                            <img src="img/circle-arrow-down-solid.svg" alt="Down arrow">
+                        </button>
+    
+                    </div>
+    
+                    <div class="tile">
+                        <p class="num" id="pause-minutes">5</p>
+                        <p class="text">Pausa</p>
+                    </div>
+                </div>
+        
+                <div class="section">
+     
+                    <div class="arrows">
+                        <button class="up-arrow" id="section-up" onclick="tileValue('section-up')">
+                            <img src="img/circle-arrow-up-solid.svg" alt="Up arrow">
+                        </button>
+    
+                        <button class="down-arrow" id="section-down" onclick="tileValue('section-down')">
+                            <img src="img/circle-arrow-down-solid.svg" alt="Down arrow">
+                        </button>
+    
+                    </div>
+    
+                    <div class="tile">
+                        <p class="num" id="section-times">3</p>
+                        <p class="text">Seções</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="button-container" id="initial-button">
+    
+                <button class="start-inicio" onclick="createMinutes()">START</button>
+    
+            </div>
+
+        </div>
+
+        <div class="timer-container hidden">
+            <h2 id="timer-title">Trabalho</h2>
+
+            <div class="tiles">
+
+                <div class="timer">
+                    <p class="timer-minutes"></p>
+                </div>
+
+            </div>
+
+
+            <div class="button-container">
+    
+                <button class="start">START</button>
+    
+                <button class="pause">PAUSE</button>
+    
+                <button class="reset">RESET</button>
+    
+            </div>
+
+        </div>
+
+        <footer>
+            <p>Site desenvolvidor por <a href="https://www.linkedin.com/in/rafael-calixta-047344234/" target="_blank">Rafael Calixta</a></p>
+        </footer>
+
+    </div>
+
+    
+
+
+
+
+
+    <script src="js/scripts.js"></script>
+
+</body>
+</html>

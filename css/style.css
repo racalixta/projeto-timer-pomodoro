@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+    --cor0: #333853;
+    --cor1: #3C4262;
+    --cor2: rgb(170, 169, 169);
+    --cor3: #20243b;
+    --cor4: #1b1e2e;
+    --fonte-padrão: 'Inter', sans-serif;
+}
+
+*{  
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--fonte-padrão);
+}
+ 
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor0);
+}
+
+.container{
+    width: 70vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor3);
+    flex-direction: column;
+}
+
+.title-container {
+    width: 70vw;
+    height: 20vh;
+    background-color: var(--cor4);
+}
+
+.title-container h1 {
+    color: var(--cor2);
+    font-size: 3.3em;
+    margin-top: .6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tiles {
+    width: 70vw;
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.app-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.timer-container {
+    width: 70vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.timer-container h2 {
+    color: var(--cor2);
+    font-size: 1.8em;
+    margin-top: .6em;
+    
+}
+
+.timer {
+    width: 16em;
+    height: 16em;
+    margin-top: 1.5em;
+    background-color: var(--cor1);
+    border-radius: 16em;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.26);
+}
+
+.timer-minutes {
+    color: var(--cor2);
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 1.9em;
+}
+
+.tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: .3em;
+}
+
+.num {
+    width: 60px;
+    height: 60px;
+    margin-bottom: .3em;
+    font-size: 2.3em;
+    font-weight: bold;
+    color: var(--cor2);
+    background-color: var(--cor1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.349);
+}
+
+.pausado {
+    color: rgb(226, 29, 29);
+}
+
+.hidden {
+    display: none;
+}
+
+.text {
+    font-size: 1.1em;
+    color: var(--cor2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrows button{
+    width: 36px;
+    height: 36px;
+    margin: .6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor1);
+    border: none;
+    border-radius: 20px;
+}
+
+.arrows button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.arrows img {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.work, .pause, .section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.button-container {
+    width: 70vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container button {
+    background-color: var(--cor1);
+    color: var(--cor2);
+    font-weight: bold;
+    font-size: 1.4em;
+    border: none;
+    border-radius: 10px;
+    margin: .4em;
+    padding: .4em;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.199);
+}
+
+#initial-button button{
+    width: 40vw;
+}
+
+.button-container button:hover {
+    transform: scale(1.1);
+    background-color: var(--cor0);
+    cursor: pointer;
+}
+
+footer{
+    background-color: var(--cor4);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: .3em;
+}
+
+footer p {
+    color: white;
+    font-weight: 300;
+}
+
+footer p a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer p a:visited {
+    color: rgb(108, 147, 253);
+}
+
+footer p a:hover {
+    color: rgb(255, 161, 173);
+    text-decoration: underline;
+}
+
+
+
+
+@media (max-width: 600px){
+
+
+    .title-container {
+        width: 100vw;
+    }
+
+    .container {
+        width: 100vw;
+    }
+
+    .app-container {
+        width: 100vw;
+    }
+
+    .tiles {
+        width: 100vw;
+    }
+
+    .timer-container {
+        width: 100vw;
+    }
+
+}
+
+@media (max-width: 390px) {
+    .tiles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+

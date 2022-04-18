@@ -69,7 +69,6 @@ function createMinutes() {
         });
     }
 
-
     let timer;
     let workSeconds = Number(workMinutes.textContent) * 60;
     let pauseSeconds = Number(pauseMinutes.textContent) * 60;
@@ -131,7 +130,7 @@ function createMinutes() {
             if(resto !== 0) {
                 volta.play();
                 seconds = workSeconds; // work
-                timerTitle.textContent = "Work";
+                timerTitle.textContent = "Trabalho";
             }
 
             if(timesCounter === 0){
